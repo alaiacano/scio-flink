@@ -4,7 +4,7 @@ import org.apache.flink.api.scala._
 import org.apache.flink.api.java.aggregation.Aggregations
 import org.apache.flink.streaming.api.scala.extensions.impl.acceptPartialFunctions
 
-object FraudDetectionJob {
+object WordCount {
 
   @throws[Exception]
   def main(args: Array[String]): Unit = {
