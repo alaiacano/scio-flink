@@ -3,7 +3,9 @@ package io.github.alaiacano
 import com.spotify.scio._
 
 /*
-sbt "runMain io.github.alaiacano.WordCount --runner=FlinkRunner --input=file:///Users/adam/code/scio-flink/shakespeare.txt --output=counts.txt"
+This is the generic wordcount example from spotify.
+
+sbt "runMain io.github.alaiacano.scio.WordCount --runner=FlinkRunner --input=file:///Users/adam/code/scio-flink/shakespeare.txt --output=counts.txt"
 */
 
 object WordCount {
