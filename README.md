@@ -1,8 +1,8 @@
 # scio-flink
 
-## Raison d'être:
+Some experiments with [scio](http://www.github.com/spotify/scio) and flink (scala) jobs to learn a bit about the difference.
 
-TODO: your project description
+All of the below are default README from the scio g8 template.
 
 ## Features:
 
@@ -11,9 +11,10 @@ This project comes with number of preconfigured features, including:
 ### sbt-pack
 
 Use `sbt-pack` instead of `sbt-assembly` to:
- * reduce build time
- * enable efficient dependency caching
- * reduce job submission time
+
+- reduce build time
+- enable efficient dependency caching
+- reduce job submission time
 
 To build package run:
 
