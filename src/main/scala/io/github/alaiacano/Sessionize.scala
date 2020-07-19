@@ -1,5 +1,6 @@
 package io.github.alaiacano
 
+import io.github.alaiacano.algebird._
 import com.spotify.scio._
 import scala.language.higherKinds
 

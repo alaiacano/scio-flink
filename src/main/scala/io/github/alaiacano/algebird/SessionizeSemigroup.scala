@@ -1,4 +1,5 @@
-package io.github.alaiacano
+package io.github.alaiacano.algebird
+
 import com.twitter.algebird.Semigroup
 import com.twitter.algebird.Operators._
 import scala.annotation.tailrec
