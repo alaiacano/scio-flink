@@ -1,11 +1,11 @@
-package io.github.alaiacano
+package io.github.alaiacano.scio
 
 import io.github.alaiacano.algebird._
 import com.spotify.scio._
 import scala.language.higherKinds
 
 /*
-sbt "runMain io.github.alaiacano.Sessionize --runner=FlinkRunner --input=file:///Users/adam/code/scio-flink/sessions.csv --output=sessionized"
+sbt "runMain io.github.alaiacano.scio.Sessionize --runner=FlinkRunner --input=file:///Users/adam/code/scio-flink/sessions.csv --output=sessionized"
 */
 object Sessionize {
 
