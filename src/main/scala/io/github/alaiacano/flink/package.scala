@@ -56,7 +56,7 @@ package object flink {
       gds.groupBy(0).reduce(reduceKV(_, _))
     }
 
-    def aggregateByKey[K, V : TypeInformation : ClassTag, B : TypeInformation : ClassTag, C]()(implicit agg: Aggregator[V, B, C]): DataSet[K, C] = {
+    def aggregateByKey[K, V : TypeInformation : ClassTag, B : TypeInformation : ClassTag, C]()(implicit agg: Aggregator[V, B, C]): DataSet[(K, C)] = {
       def mapKB(kv: (K, V)): (K, B) = (kv._1, agg.prepare(kv._2))
       def reduceKB(kv1: (K, B), kv2: (K, B)) = (kv1._1, agg.reduce(kv1._2, kv2._2))
       def presentKC(kb: (K, B)): (K, C) = (kb._1, agg.present(kb._2))
